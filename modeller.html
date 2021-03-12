@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: linear-gradient(to right bottom,
+                    /*renk efekti ve bu efek nerden nereye değişsin*/
+                    rgba(255, 102, 102, 0.7),
+                    rgba(230, 230, 230, 0.1)), url("arkaa.png");
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: auto;
+            background-attachment: fixed;
+            /*sabit arkaplann*/
+            transition: all 5s ease;
+            font-family: serif;
+            font-size: 20px;
+            font-style: oblique;
+        }
+
+
+        .n {
+            color: black;
+            transition: all 0.8s ease;
+        }
+
+        .n:hover {
+            background-color: lightblue;
+            border-radius: 10px;
+            padding-left: 10px;
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        h2 {
+            font-weight: bold;
+        }
+
+        i {
+            transition: all 0.8 ease;
+        }
+
+        i:hover {
+            height: 25px;
+            color: purple;
+        }
+
+        .swiper-container {
+            width: 80%;
+            padding-bottom: 40px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 250px;
+            height: 250px;
+        }
+        h3{
+            text-align: left;
+            margin-left: 40%;
+        }
+
+        @media screen and (max-width:800px){  /*700 piksel üstünde nasıl görünecek.*/ 
+    h3{
+      margin-left: 30%;
+      font-size: 20px;
+    }
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-light navbar-light justify-content-between fixed-top mb-5">
+        <!--mobil boyuta gelince alt alta gelsin.-->
+
+        <a href="anasayfa.html" class="navbar-brand">
+            <img src="ikon.png" style="width: 70px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsi">
+            <!--mobil cihazlara gelince bir açılır buton olsun-->
+            <span><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsi">
+            <ul class="navbar-nav ml-auto px-2">
+                <li class="nav-item ml-2"><a href="hakkımızda.html" class="nav-link n">Hakkımızda</a></li>
+                <li class="nav-item ml-2"><a href="iletisim.html" class="nav-link n">İletişim</a></li>
+                <li class="nav-item ml-2"><a href="modeller.html" class="nav-link n">Ürün Modelleri</a></li>
+            </ul>
+
+    </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <h3>Yüzük Modellerimiz</h3>
+            <br>
+
+            <div class="swiper-container">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(yüzük/1.jpg);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(yüzük/2.jpg);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(yüzük/3.jpeg);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(yüzük/4.jpg);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(yüzük/5.jpg);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(yüzük/6.jpg);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(yüzük/7.jpg);border-radius: 20px;"></div>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+        <div class="row mt-5">
+            <h3>Kolye Modellerimiz</h3>
+            <br>
+
+            <div class="swiper-container">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(kolye/1.jpg);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(kolye/2.jpg);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(kolye/3.jfif);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(kolye/4.jfif);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(kolye/5.jfif);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(kolye/6.jfif);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(kolye/7.jfif);border-radius: 20px;"></div>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+
+        <div class="row mt-5">
+            <h3>Bileklik Modellerimiz</h3>
+            <br>
+
+            <div class="swiper-container">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(bileklik/1.jpg);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(bileklik/2.jpg);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(bileklik/3.jpg);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(bileklik/4.jpg);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(bileklik/5.jpg);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(bileklik/6.jpg);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(bileklik/7.jfif);border-radius: 20px;"></div>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+
+        <div class="row my-5">
+            <h3>Küpe Modellerimiz</h3>
+            <br>
+            <div class="swiper-container">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(küpe/1.jpg);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(küpe/2.jpg);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(küpe/3.jpg);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(küpe/4.jpg);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(küpe/5.jpg);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(küpe/6.jpg);border-radius: 20px;"></div>
+                    <div class="swiper-slide" style="background-image:url(küpe/7.jpg);border-radius: 20px;"></div>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    <footer class="bg-light text-center text-lg-start" style="margin-top: 70px;">
+        <!-- Copyright -->
+        <div class="text-center p-3">
+          © 2020 Copyright:
+          <a class="text-dark" href="https://mdbootstrap.com/">| ZtRkTECH</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+  
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+        autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+
+
+
+</html>
